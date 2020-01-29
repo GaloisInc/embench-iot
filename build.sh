@@ -8,5 +8,5 @@ python3.7 ./build_all.py \
 		--logdir ../build/logs \
 		--arch riscv32 \
 		--chip p1 \
-		--board p1-fpga \
-		--dummy-libs support/boot.S
+		--board p1-fpga #\
+		#--dummy-libs support/boot.S
