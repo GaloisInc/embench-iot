@@ -9,5 +9,3 @@ python3.7 ./build_all.py \
 		--arch riscv32 \
 		--chip p1 \
 		--board p1-fpga #\
-		#--dummy_libs support/boot.S
-		#--dummy_libs dummy-libc.c
