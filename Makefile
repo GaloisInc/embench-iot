@@ -5,11 +5,9 @@
 default: all;
 
 all:
-	#./build.sh
 	if [ -d ../build ]; then rm -rf ../build; fi
 
 	mkdir ../build
-	#mkdir ../build/log
 
 	python3.7 ./build_all.py \
 	                --builddir ../build \
@@ -37,3 +35,9 @@ eb:
 
 ea:
 	nano ./config/riscv32/arch.cfg
+
+objdump:
+	make od
+
+od:
+	riscv64-unknown-elf-objdump -x ../build/src/aha-mont64/aha-mont64
